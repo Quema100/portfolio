@@ -1,0 +1,398 @@
+#home {
+    width: 100vw;
+    height: 292vh;
+    padding-top: 8vh;
+    float: left;
+}
+
+#home>.hello {
+    width: 100vw;
+    height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#home>.content {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#home>.goals {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+#home>.hello>.profile-container {
+    text-align: center;
+    background-color: #cacaca;
+    padding: 20px;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#home>.hello>.profile-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#home>.hello>.intro {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+#home>.hello>.intro>.typing-animation {
+    display: inline-block;
+    overflow: hidden;
+    border-right: .15em solid black;
+    white-space: nowrap;
+    animation: typing-and-erasing 9s steps(30, end) infinite;
+}
+
+#home>.content>.projects {
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#home>.content>.wrap {
+    display: flex;
+    overflow: hidden;
+    width: 100vw;
+    height: 55vh;
+    align-items: center;
+}
+
+#home>.content>.wrap .rolling-list ul {
+    padding: 0;
+    display: flex;
+}
+
+#home>.content>.wrap .rolling-list ul li {
+    width: 589px;
+    height: 276px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin: 0 16px;
+    padding: 35px 31px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    justify-content: center;
+}
+
+#home>.content>.wrap .rolling-list ul li:nth-child(1) {
+    background-color: #d8d8d8;
+}
+
+#home>.content>.wrap .rolling-list ul li:nth-child(2) {
+    background-color: #cfcfcf;
+}
+
+#home>.content>.wrap .rolling-list ul li:nth-child(3) {
+    background-color: #b8b8b8;
+}
+
+#home>.content>.wrap .rolling-list ul li:nth-child(4) {
+    background-color: #aaaaaa;
+}
+
+#home>.content>.wrap .rolling-list ul li:nth-child(even) {
+    margin-top: 80px;
+}
+
+#home>.content>.wrap .rolling-list ul li .banner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#home>.content>.wrap .rolling-list ul li .banner .image-wrap {
+    width: 25%;
+    height: 100%;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home>.content>.wrap .rolling-list ul li .banner .image-wrap>img {
+    width: 100%;
+}
+
+#home>.content>.wrap .rolling-list ul li .banner .desc {
+    margin-left: 3%;
+    width: 72%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#home>.content>.wrap .rolling-list ul li .banner .desc strong {
+    display: block;
+    text-align: left;
+    margin-left: 1%;
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+#home>.content>.wrap .rolling-list ul li .banner .desc span {
+    font-size: 72%;
+    white-space: nowrap;
+    text-align: left;
+    margin-left: 1%;
+    line-height: 1.2;
+}
+
+.rolling-list.original {
+    animation: rollingleft1 50s linear infinite;
+}
+
+.rolling-list.clone {
+    animation: rollingleft2 50s linear infinite;
+}
+
+#home>.goals .goal-h1 {
+    display: none;
+    margin: 0;
+    height: 10vh;
+    width: 100vw;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#home>.goals .goal-p {
+    display: none;
+    margin: 0;
+    height: auto;
+    width: 100vw;
+}
+
+#home>.goals .highlight {
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+/* "Dark Mode" and "Light Mode" */
+
+body.light-mode #home>.hello>.profile-container {
+    text-align: center;
+    background-color: #cacaca;
+    padding: 20px;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode #home>.hello>.profile-container {
+    text-align: center;
+    background-color: #dadada;
+    padding: 20px;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.5);
+}
+
+body.light-mode #home>.hello>.intro>.typing-animation {
+    display: inline-block;
+    overflow: hidden;
+    border-right: .15em solid black;
+    white-space: nowrap;
+    animation: typing-and-erasing 9s steps(30, end) infinite;
+}
+
+body.dark-mode #home>.hello>.intro>.typing-animation {
+    display: inline-block;
+    overflow: hidden;
+    border-right: .15em solid white;
+    white-space: nowrap;
+    animation: typing-and-erasing 9s steps(30, end) infinite;
+}
+
+body.light-mode #home>.content>.wrap .rolling-list ul li:nth-child(1) {
+    background-color: #d8d8d8;
+}
+
+body.light-mode #home>.content>.wrap .rolling-list ul li:nth-child(2) {
+    background-color: #cfcfcf;
+}
+
+body.light-mode #home>.content>.wrap .rolling-list ul li:nth-child(3) {
+    background-color: #b8b8b8;
+}
+
+body.light-mode #home>.content>.wrap .rolling-list ul li:nth-child(4) {
+    background-color: #aaaaaa;
+}
+
+body.dark-mode #home>.content>.wrap .rolling-list ul li:nth-child(1) {
+    background-color: #252525;
+}
+
+body.dark-mode #home>.content>.wrap .rolling-list ul li:nth-child(2) {
+    background-color: #303030;
+}
+
+body.dark-mode #home>.content>.wrap .rolling-list ul li:nth-child(3) {
+    background-color: #414141;
+}
+
+body.dark-mode #home>.content>.wrap .rolling-list ul li:nth-child(4) {
+    background-color: #444444;
+}
+
+/* animation */
+
+@keyframes typing-and-erasing {
+
+    0% {
+        margin: 0;
+        width: 0;
+        border-color: transparent;
+    }
+
+    5% {
+        border-color: currentColor;
+    }
+
+    30%,
+    40%,
+    50% {
+        width: 100%;
+        border-color: currentColor;
+    }
+
+    35%,
+    45% {
+        width: 100%;
+        border-color: transparent;
+    }
+
+    80% {
+        margin: 0;
+        width: 0;
+        border-color: currentColor;
+    }
+
+    80.01% {
+        margin-right: 154.13px;
+        width: 0;
+        border-color: transparent;
+    }
+
+    85%,
+    95%,
+    100% {
+        margin-right: 154.13px;
+        width: 0;
+        border-color: transparent;
+    }
+
+    90% {
+        width: 0;
+        border-color: currentColor;
+    }
+}
+
+@keyframes rollingleft1 {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-100%);
+    }
+
+    50.01% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes rollingleft2 {
+    0% {
+        transition: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-200%);
+    }
+}
+
+@keyframes goalup {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes goaldown {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+}
+
+@keyframes colorChange {
+    from {
+        color: currentColor;
+        opacity: 0;
+    }
+
+    to {
+        color: #4caf50;
+        opacity: 1;
+    }
+}

@@ -1,0 +1,66 @@
+#contact {
+    width: 100vw;
+    height: 92vh;
+    padding-top: 8vh;
+    float: left;
+}
+
+#contact>.contact {
+    width: 100vw;
+    height: 88vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact>.contact>.links {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact>.contact>.links>.github {
+    margin: 15px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+#contact>.contact>.links>.instagram {
+    margin: 15px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+#contact>.contact>.links img {
+    width: 50px;
+    height: auto;
+}
+
+#contact>footer {
+    width: 100vw;
+    height: 4vh;
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* "Dark Mode" and "Light Mode" */
+
+body.light-mode #contact>.contact>.links img {
+    filter: invert(0);
+}
+
+body.dark-mode #contact>.contact>.links img {
+    filter: invert(1) hue-rotate(180deg);
+}
