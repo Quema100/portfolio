@@ -60,5 +60,5 @@ const initAboutScroll = (aboutSection, introduction_h1, introduction_p, highligh
                 isScrolling = false;
             }, 1000);
         }
-    });
+    }, { passive: true });
 };
