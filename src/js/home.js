@@ -63,7 +63,7 @@ const initHomeScroll = (homeSection, goal_h1, goal_p, highlights, navbar) => {
                 isScrolling = false;
             }, 1000);
         }
-    });
+    }, { passive: true });
 };
 
 const rollerfun = () => {
