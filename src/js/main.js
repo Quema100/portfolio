@@ -19,9 +19,11 @@ window.onload = () => {
 
     switch (window.location.hash) {
         case "#home":
-            home.scrollIntoView({ behavior: 'smooth' });
-            navbar.style.animation = "navdown 1.3s forwards";
-            console.log("Home section");
+            setTimeout(() => {
+                home.scrollIntoView({ behavior: 'smooth' });
+                navbar.style.animation = "navdown 1.3s forwards";
+                console.log("Home section");
+            }, 10);
             break;
         case "#about":
             setTimeout(() => {
