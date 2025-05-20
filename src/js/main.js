@@ -23,7 +23,7 @@ window.onload = () => {
                 home.scrollIntoView({ behavior: 'smooth' });
                 navbar.style.animation = "navdown 1.3s forwards";
                 console.log("Home section");
-            }, 5);
+            }, 0);
             break;
         case "#about":
             setTimeout(() => {
